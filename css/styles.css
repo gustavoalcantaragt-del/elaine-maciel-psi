@@ -1164,8 +1164,10 @@ ul { list-style: none; }
 }
 .agendamento__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0;
+  max-width: 680px;
+  margin-inline: auto;
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-lg);
