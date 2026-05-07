@@ -175,20 +175,6 @@ function showToast(message) {
   }, 4500);
 }
 
-// ── Contact form ───────────────────────────────────
-document.getElementById('contactForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.disabled = true;
-  const original = btn.innerHTML;
-  btn.innerHTML = '<span>Enviando...</span>';
-  setTimeout(() => {
-    showToast('Mensagem enviada! Em breve entrarei em contato.');
-    e.target.reset();
-    btn.disabled = false;
-    btn.innerHTML = original;
-  }, 1400);
-});
 
 // ── Smooth hover tilt em service cards (desktop apenas) ──
 if (!isCoarsePointer && !prefersReducedMotion) {
