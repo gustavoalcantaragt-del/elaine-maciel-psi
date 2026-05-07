@@ -203,13 +203,19 @@ ul { list-style: none; }
 }
 
 .btn--nav {
-  background: linear-gradient(135deg, var(--wine-500), var(--wine-700));
-  color: #fff;
+  background: var(--wine-700);
+  color: #fff !important;
   padding: 10px 22px;
   font-size: .82rem;
-  box-shadow: 0 2px 12px rgba(155,52,100,.25);
+  font-weight: 600;
+  box-shadow: 0 2px 16px rgba(90,31,60,.45);
+  border: 1.5px solid var(--wine-600);
 }
-.btn--nav:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(155,52,100,.35); }
+.btn--nav:hover {
+  background: var(--wine-500);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(155,52,100,.5);
+}
 
 .btn--full { width: 100%; justify-content: center; }
 
